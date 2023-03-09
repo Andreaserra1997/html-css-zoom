@@ -69,5 +69,58 @@ main {
 /* footer  */
 footer {
     height: var(--nav-footer);
-    background-color: olive;
+    background-color: black;
+}
+
+.big-container {
+    display: flex;
+    justify-content: space-between;
+}
+.btn {
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+.big-icon {
+    font-size: 1.3rem;
+}
+
+.mute {
+    display: flex;
+    flex-direction: column;
+    padding-inline: .4rem;
+    padding-top: .2rem;
+}
+
+.arrow-down {
+    padding-right: 10px;
+}
+.arrow-down a {
+    position: fixed;
+    bottom: 20px;
+    font-size: .8rem;
+}
+
+.text-footer {
+    font-size: .8rem;
+}
+
+.btn a i {
+    color: white;
+}
+
+#green {
+    color: green;
+}
+.end-call {
+    display: flex;
+}
+
+.end-call a {
+    text-decoration: none;
+    color: red;
+    display: flex;
+    align-items: center;
+    margin-right: 1.2rem;
 }
