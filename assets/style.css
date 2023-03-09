@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    background-color: black;
+    color: white;
+}
+
+.text-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: .6rem;
+    gap: .4rem;
+}
+
+.text-btn {
+    background-color: #4A4A4A;
+    padding: .3rem;
+    border-radius: 5px;
+}
