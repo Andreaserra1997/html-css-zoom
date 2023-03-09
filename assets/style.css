@@ -4,14 +4,23 @@
     box-sizing: border-box;
 }
 
+:root {
+    --nav-footer: 3rem;
+}
+
+body {
+    margin-top: var(--nav-footer);
+}
+
+/* nav  */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 3rem;
+    z-index: 99;
+    height: var(--nav-footer);
     background-color: black;
-    color: white;
 }
 
 .text-nav {
@@ -21,8 +30,36 @@ nav {
     gap: .4rem;
 }
 
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
 .text-btn {
     background-color: #4A4A4A;
     padding: .3rem;
     border-radius: 5px;
+}
+
+/* main  */
+
+main {
+    height: calc(100vh - var(--nav-footer));
+    background-color: blue;
+}
+
+.cards {
+    width: 100px;
+    height: 1000px;
+    background-color: red;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: var(--nav-footer);
+    background-color: white;
 }
