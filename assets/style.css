@@ -9,17 +9,11 @@
 }
 
 main {
-    margin-top: var(--nav-footer);
     overflow-y: scroll;
 }
 
 /* nav  */
 nav {
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99; */
     height: var(--nav-footer);
     background-color: black;
 }
@@ -45,24 +39,35 @@ nav a {
 /* main  */
 
 main {
-    height: calc(100vh - var(--nav-footer));
-    /* background-color: blue; */
+    height: calc(100vh - var(--nav-footer) - 3rem);
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cards {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    position: relative;
+    display: flex;
+    flex: 0 0 calc(100% / 7);
+    padding: .5rem .2rem;
 }
 
+.cards img {
+    width: 100%;
+}
+
+.cards h2 {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-size: .7rem;
+}
 
 /* footer  */
 footer {
-    /* position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 99; */
     height: var(--nav-footer);
     background-color: olive;
 }
