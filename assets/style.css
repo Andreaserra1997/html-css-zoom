@@ -8,17 +8,18 @@
     --nav-footer: 3rem;
 }
 
-body {
+main {
     margin-top: var(--nav-footer);
+    overflow-y: scroll;
 }
 
 /* nav  */
 nav {
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 99; */
     height: var(--nav-footer);
     background-color: black;
 }
@@ -45,21 +46,23 @@ nav a {
 
 main {
     height: calc(100vh - var(--nav-footer));
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .cards {
     width: 100px;
-    height: 1000px;
+    height: 100px;
     background-color: red;
 }
 
+
+/* footer  */
 footer {
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 99; */
     height: var(--nav-footer);
-    background-color: white;
+    background-color: olive;
 }
